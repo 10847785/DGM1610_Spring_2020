@@ -22,12 +22,12 @@ public class Variables : MonoBehaviour
 
     }
 
-    void Cookies(int amount, float money, float cost);
+    void Cookies(int amount, float money, float cost)
     {
-    float total;
+        float total;
 
-    total = money - cost* amount;
+        total = money - cost* amount;
 
-    print("Hello World");
+        print("Hello World");
     }
 }

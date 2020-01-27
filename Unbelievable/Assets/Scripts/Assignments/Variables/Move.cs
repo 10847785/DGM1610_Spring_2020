@@ -14,11 +14,12 @@ public class Move : MonoBehaviour
     void Update()
     {
         transform.Translate(0, 0, 0.1f);
+                            //(x,y,z)
     }
 
     //Detect collison with another object
     void OnCollisionEnter(Collision other){
-
+        Debug.Log("Colliding with an object");
     }
 
     void OnTriggerEnter(Collider other){

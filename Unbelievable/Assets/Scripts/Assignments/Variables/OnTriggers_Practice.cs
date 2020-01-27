@@ -13,7 +13,7 @@ public class OnTriggers_Practice : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.Translate(members 10, alive 10, dead 0); 
+        
     }
 
     // Update is called once per frame

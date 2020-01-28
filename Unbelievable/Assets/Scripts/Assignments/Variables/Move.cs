@@ -25,7 +25,7 @@ public class Move : MonoBehaviour
         {
             Debug.Log("Colliding with Floor");
         }
-        else if(other.gameObject.CompareTag("Object")) // Secondary
+        else if(other.gameObject.CompareTag("Obstacle")) // Secondary
         {
             Debug.Log("Colliding with Obstacle");
         }

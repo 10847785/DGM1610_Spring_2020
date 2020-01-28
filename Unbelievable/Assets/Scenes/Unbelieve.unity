@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 615391224}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,7 +327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615391219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6641197, y: -0.59, z: -0.9134884}
+  m_LocalPosition: {x: 0.6641197, y: -0.85, z: -0.9134884}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 1243392433}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -435,7 +435,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243392432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6641197, y: -1.512002, z: -0.9134884}
+  m_LocalPosition: {x: 0.6641197, y: -1.45, z: -0.9134884}
   m_LocalScale: {x: 3.3195, y: 3.3195, z: 3.3195}
   m_Children: []
   m_Father: {fileID: 0}
@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 1531475640}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

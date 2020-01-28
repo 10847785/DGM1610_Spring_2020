@@ -38,7 +38,7 @@ public class Move : MonoBehaviour
 
 
     void OnTriggerEnter(Collider other){
-
+        Debug.Log("Oh yeah, Mr. Krabs");
     }
 
 }

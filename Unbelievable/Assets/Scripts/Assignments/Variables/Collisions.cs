@@ -16,14 +16,41 @@ public class Collisions : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-       
+        if (gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player is in the game");
+        }
     }
-    void OnCollisionStay(Collision collision)
+
+    void OnTriggerStay(Collider other)
     {
         
     }
+
+    void OnTriggerExit(Collider other)
+    {
+        
+    }
+
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player has collided with a trigger");
+        }
+    }
+
+    void OnCollisionStay(Collision collision)
+    {
+        if (gameObject.CompareTag("Player"))
+        {
+            
+        }
+    }
+
     void OnCollisionExit(Collision collision)
     {
        

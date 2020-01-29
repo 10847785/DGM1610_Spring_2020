@@ -18,9 +18,9 @@ public class Collisions : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (gameObject.CompareTag("Player"))
+        if (gameObject.CompareTag("Trigger"))
         {
-            Debug.Log("Player is in the game");
+            Debug.Log("Colliding with Player");
         }
     }
 
@@ -37,7 +37,7 @@ public class Collisions : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (gameObject.CompareTag("Player"))
+        if (gameObject.CompareTag("Trigger"))
         {
             Debug.Log("Player has collided with a trigger");
         }

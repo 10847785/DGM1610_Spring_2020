@@ -27,7 +27,7 @@ public class Move : MonoBehaviour
     }
 
     //Detect collison with another object
-  void OnCollisionEnter(Collision other){
+    void OnCollisionEnter(Collision other){
         
 
         if (other.gameObject.CompareTag("Floor")) // Primary

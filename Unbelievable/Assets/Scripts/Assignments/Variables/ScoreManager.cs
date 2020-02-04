@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+
+    public static int score;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,11 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Game Score: " + score);
+    }
+
+
+    public static void AddPoints(int pointsToAdd){
+        score += pointsToAdd;
     }
 }

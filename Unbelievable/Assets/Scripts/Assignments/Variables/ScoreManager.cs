@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-
+   
     public static int score;
 
     // Start is called before the first frame update
@@ -20,7 +20,8 @@ public class ScoreManager : MonoBehaviour
     }
 
 
-    public static void AddPoints(int pointsToAdd){
+    public static void AddPoints(int pointsToAdd)
+    {
         score += pointsToAdd;
     }
 }

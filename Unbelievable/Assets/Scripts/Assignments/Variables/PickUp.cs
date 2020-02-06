@@ -6,7 +6,7 @@ public class PickUp : MonoBehaviour
 {
     public string pickUpName;
     public string pickUpType;
-    public int score;
+    public int pointsToAdd;
   
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class PickUp : MonoBehaviour
         //Check to see if trigger detected player
         if (other.gameObject.CompareTag("Player"))
         {
-            ScoreManager.AddPoints(score);
+            ScoreManager.AddPoints(pointsToAdd);
             Destroy (gameObject);
         }
     }

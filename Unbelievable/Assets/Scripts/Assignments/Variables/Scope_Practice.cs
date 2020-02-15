@@ -11,7 +11,7 @@ public class Scope_Practice : MonoBehaviour
     public int artPieces = 7;
 
     // Start is called before the first frame update
-    void Start(int water, int rocks)
+    void Example(int water, int rocks)
     {
         int complete = 17;
 

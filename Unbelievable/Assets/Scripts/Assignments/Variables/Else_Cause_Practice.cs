@@ -21,28 +21,28 @@ public class Else_Cause_Practice : MonoBehaviour
 
     // This is not meant to be taken seriously, this is just for practice
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Collectables")) ;
-        {
-            else(amountTVs = 1);
-        }
+  //  private void OnTriggerEnter(Collider other)
+  //  {
+  //      if (other.gameObject.CompareTag("Collectables")) ;
+  //      {
+  //          else(amountTVs = 1);
+  //      }
+//
+   //     else
+  //      {
+ //           if (amountTVs = 2) ;
+ //
+  //      }
 
-        else
-        {
-            if (amountTVs = 2) ;
-
-        }
-
-        if (other.gameObject.CompareTag("Collectable")) ;
-        {
-            amountTVs = 1;
-        }
-
+  //      if (other.gameObject.CompareTag("Collectable")) ;
+  //      {
+ //           amountTVs = 1;
+  //      }
+//
     
-        else 
-        {
-            amountTVs = 0;
-        }
-    }
+  //      else 
+  //      {
+  //          amountTVs = 0;
+  //      }
+  //  }
 }

@@ -6,11 +6,21 @@ public class ScoreManager : MonoBehaviour
 {
    
     public static int score;
+    public int WinScore;
+    public TextAlignment WinText;
+    TextAlignment ScoreText;
+
+    void Awake()
+    {
+        Time.timeScale = 1;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ScoreText = GetComponent<TextAlignment>();
+        score = 0;
+       
     }
 
     // Update is called once per frame

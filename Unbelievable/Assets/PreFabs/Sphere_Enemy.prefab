@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6618457504124830023}
   - component: {fileID: 8660730634491996259}
   - component: {fileID: 3752670365300129068}
+  - component: {fileID: -4246533821549257686}
   m_Layer: 0
   m_Name: Sphere_Enemy
   m_TagString: Untagged
@@ -104,7 +105,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf5033e962f875468af4d545c71b94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
   target: {fileID: 0}
-  damage: 5
   moveSpeed: 10
+--- !u!54 &-4246533821549257686
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051942265829234092}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

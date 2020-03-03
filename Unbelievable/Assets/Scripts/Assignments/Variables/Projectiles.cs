@@ -51,7 +51,7 @@ public class Projectiles : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             var hit = other.gameObject;
-            var health = hit.GetComponent<EnemyHealth>();
+            var health = hit.GetComponent<Enemy_Health>();
             //Instantiate(ProjectileParticle, transform.position, transform.rotation);
            // Destroy(gameObject);
 

@@ -20,6 +20,7 @@ public class Move : MonoBehaviour
  // Update is called once per frame
     void Update()
     {
+        // Movement Mechanic
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
 
@@ -27,7 +28,9 @@ public class Move : MonoBehaviour
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
                                                 //(x,y,z)
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        //
+
+        if (Input.GetKeyDown(KeyCode.F))
         {
             Instantiate(projectilePrefab, transform.position, transform.rotation);
         }

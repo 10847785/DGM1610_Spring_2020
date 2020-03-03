@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Health : MonoBehaviour
+public class Enemy_Health1 : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth = 3;
     public Transform spawnPoint;
-    public int points = 10;
+    public int points;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-        spawnPoint = GameObject.Find("SpawnPoint").transform;
+
     }
 
     public void TakeDamage(int amount)

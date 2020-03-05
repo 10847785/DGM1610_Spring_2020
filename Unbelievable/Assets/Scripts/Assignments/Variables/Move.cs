@@ -50,7 +50,7 @@ public class Move : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rb.AddForce(Vector3.up * jumpHeight);
+            rb.AddForce(Vector3.up * jumpHeight * 100);
         }
     }
 
@@ -59,7 +59,7 @@ public class Move : MonoBehaviour
     {
         
 
-        if (other.gameObject.CompareTag("Floor")) // Primary
+        if (other.gameObject.CompareTag("Floor") || other.gameObject.CompareTag("Obstacle"))
         {
             isGrounded = true;
             Debug.Log("Colliding with Floor");
@@ -76,7 +76,7 @@ public class Move : MonoBehaviour
 
     void OnCollisionExit(Collision other)
     {
-        if (other.gameObject.CompareTag("Floor"))
+        if (other.gameObject.CompareTag("Floor") || other.gameObject.CompareTag("Obstacle"))
         {
             isGrounded = false;
             Debug.Log("Not Colliding with Floor");

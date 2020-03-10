@@ -23,10 +23,31 @@ public class Loops : MonoBehaviour
             Num --;
         }
 
+        // Practice Code Here
+
+       
+      //  foreach (var Num Enemies) ; 
+      //  {
+           
+      //  }
+
+      //  for (int i = 100; i <= 100; i++) ;
+      //  {
+      //      Debug.Log(int i = 100;  "Does not go down" + Num);
+      //  }
+
+      //  while (Num < 100)
+      //  {
+      //      Enemies += 1;
+
+      //      Enemies = -1;
+
+      //      Debug.Log("Represents Adding or Subtracking Enemies");
+      //  }
 
     }
 
-  
+  //Practice end here
 
     // Update is called once per frame
     void Update()

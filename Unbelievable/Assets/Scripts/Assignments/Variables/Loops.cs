@@ -4,23 +4,49 @@ using UnityEngine;
 
 public class Loops : MonoBehaviour
 {
-    public int Num = 5;
-
-    public string Enemies;
+    // This variable is used with the For Loop example
+    public int numEnemies = 5;
+    // This variable is used with the While Loop example
+    public int cupsInTheSink = 10;
         
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i <= 5; i++)
-        {
-            Debug.Log(i + "Counting Up");
-        }
+        //For Loop Example
+        // = sign by < is to round out the number
+        for (int i = 0; i <= numEnemies; i++)
+         {
+             Debug.Log("Creating enemy number: " + i);
+         }
 
-        while (Num > 0)
+        //While Loop example
+        while (cupsInTheSink > 0)
         {
           //  i < Enemies; i++[Debug.Log]
-            Debug.Log("Counting Down" + Num);
-            Num --;
+            Debug.Log("I washed a cup!");
+            cupsInTheSink --;
+        }
+
+        // Do While Loop Example
+        bool shouldContinue = false;
+
+         do
+         {
+             print("Hello World");
+
+         } while (shouldContinue == true);
+
+
+        //Foreach Loop Example
+        string[] strings = new string[3];
+
+        strings[0] = "First string";
+        strings[1] = "Second string";
+        strings[2] = "Third string";
+
+        foreach (string item in strings)
+        {
+            print(item);
         }
 
         // Practice Code Here
@@ -44,7 +70,7 @@ public class Loops : MonoBehaviour
 
       //      Debug.Log("Represents Adding or Subtracking Enemies");
       //  }
-
+      
     }
 
   //Practice end here

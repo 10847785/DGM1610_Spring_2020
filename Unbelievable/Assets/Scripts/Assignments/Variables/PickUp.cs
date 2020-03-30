@@ -8,18 +8,6 @@ public class PickUp : MonoBehaviour
     public string pickUpType;
     public int pointsToAdd;
   
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     void OnTriggerEnter(Collider other){
         //Check to see if trigger detected player

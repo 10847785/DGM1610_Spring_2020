@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class SwitchStatement : MonoBehaviour
 {
-    public int weaponType = 3;
+    public string weapon = "Fists";
+    public int smarts = 3;
 
     void weaponsMenu()
     {
-        switch (weaponType)
+        switch (smarts)
         {
             case 3:
                 print("Rocks");
@@ -31,7 +32,23 @@ public class SwitchStatement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(weapon == "Rocks")
+        {
+            print("Throw rocks");
+        }
+        else if(weapon == "Bow")
+        {
+            print("You can shoot arrows!");
+        }
+        else if(weapon == "Sword")
+        {
+            print("You have a sword!");
+
+        }
+        else
+        {
+            print("You have no weapons");
+        }
     }
 
     // Update is called once per frame

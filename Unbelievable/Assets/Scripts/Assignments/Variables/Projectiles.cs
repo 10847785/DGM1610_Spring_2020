@@ -69,6 +69,6 @@ public class Projectiles : MonoBehaviour
     IEnumerator DestroyProjectile()
     {
         yield return new WaitForSeconds(time);
-        Destroy(gameObject);
+        Destroy(gameObject); 
     }
 }

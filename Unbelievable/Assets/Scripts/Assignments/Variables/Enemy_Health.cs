@@ -23,6 +23,8 @@ public class Enemy_Health : MonoBehaviour
         {
             //Keep score at zero
             currentHealth = 0;
+            //Add points for killing the enemy
+            ScoreManager.AddPoints(points);
             print("Enemy is Dead!");
             // Add points to score for killing enemy
             //scoreManager.AddPoints(points);
@@ -34,9 +36,5 @@ public class Enemy_Health : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

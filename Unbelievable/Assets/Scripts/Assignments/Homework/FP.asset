@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b522edad0dd111478edd9baa470c87a, type: 3}
-  m_Name: Rocks
+  m_Script: {fileID: 11500000, guid: e01fffa518f4eb44f99fc86f3cadb9d7, type: 3}
+  m_Name: FP
   m_EditorClassIdentifier: 
-  weapon: Rocks
-  description: You throw rocks
-  model: {fileID: 4379163920929523356, guid: 845d4c38d5cd0cb46b3df1adf2b17ee2, type: 3}
-  type: {fileID: 0}
+  camera: First Person
+  Position: {x: 0, y: 0, z: 0}
+  Scale: {x: 0, y: 0, z: 0}

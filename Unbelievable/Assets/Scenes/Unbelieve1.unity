@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 69015724}
   - component: {fileID: 69015725}
   - component: {fileID: 69015726}
+  - component: {fileID: 69015727}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -402,6 +403,21 @@ MonoBehaviour:
   currentHealth: 100
   hp: {fileID: 2051639769}
   maxHP: {fileID: 391741330}
+--- !u!114 &69015727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69015717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8097c56db33aa543b96b767289e35f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAmmo: 20
+  am: {fileID: 803404693}
+  maxAM: {fileID: 854296580}
 --- !u!1 &159309614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1083,7 @@ MonoBehaviour:
   pickUpType: 
   pointsToAdd: 0
   healthAmount: 100
+  HealthText: {fileID: 0}
 --- !u!1 &615391219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,6 +1454,160 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &755940818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 755940822}
+  - component: {fileID: 755940821}
+  - component: {fileID: 755940820}
+  - component: {fileID: 755940819}
+  - component: {fileID: 755940823}
+  - component: {fileID: 755940825}
+  - component: {fileID: 755940824}
+  - component: {fileID: 755940826}
+  m_Layer: 0
+  m_Name: Health
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &755940819
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755940818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &755940820
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755940818}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b1e8f379203fd3540811ef1f5b5a47c2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &755940821
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755940818}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &755940822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755940818}
+  m_LocalRotation: {x: -0.7058427, y: -0, z: -0, w: 0.7083687}
+  m_LocalPosition: {x: -12, y: -0.59, z: 2.28}
+  m_LocalScale: {x: 1, y: 0.18864, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: -89.797005, y: 0, z: 0}
+--- !u!114 &755940823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755940818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30819e519521374abe23844f8c8875f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpName: Health
+  pickUpType: Standard
+  pointsToAdd: 5
+  healthAmount: 100
+  HealthText: {fileID: 0}
+--- !u!114 &755940824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755940818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a23470c3bfc8b418499ec394519212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z_speed: 3
+--- !u!65 &755940825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755940818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &755940826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755940818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a72372b144a84499e954c118afbc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpName: Health Boost
+  pickUpType: Health
+  pointsToAdd: 5
 --- !u!1 &803404691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,8 +2651,9 @@ GameObject:
   - component: {fileID: 1736141871}
   - component: {fileID: 1736141870}
   - component: {fileID: 1736141876}
+  - component: {fileID: 1736141877}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2499,7 +2671,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8097c56db33aa543b96b767289e35f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AmmoPickUp: 1
+  currentAmmo: 20
+  am: {fileID: 0}
+  maxAM: {fileID: 0}
 --- !u!65 &1736141871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2508,7 +2682,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736141869}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2522,7 +2696,7 @@ SphereCollider:
   m_GameObject: {fileID: 1736141869}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -2598,6 +2772,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   z_speed: 3
+--- !u!114 &1736141877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736141869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a72372b144a84499e954c118afbc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpName: Rocks
+  pickUpType: Weapon
+  pointsToAdd: 5
 --- !u!1 &1793726062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2612,7 +2801,6 @@ GameObject:
   - component: {fileID: 1793726064}
   - component: {fileID: 1793726063}
   - component: {fileID: 1793726069}
-  - component: {fileID: 1793726070}
   - component: {fileID: 1793726068}
   m_Layer: 0
   m_Name: Gold Coin
@@ -2735,21 +2923,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2.0000002, z: 1.0000005}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
---- !u!111 &1793726070
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793726062}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1828226479
 GameObject:
   m_ObjectHideFlags: 0

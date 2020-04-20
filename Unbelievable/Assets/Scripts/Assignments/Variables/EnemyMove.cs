@@ -25,7 +25,7 @@ public class EnemyMove : MonoBehaviour
         //transform.LookAt(target);
         //transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
-
+    
     void FixedUpdate()
     {
         // Add Force

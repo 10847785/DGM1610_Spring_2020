@@ -23,8 +23,8 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // IsEdge = Physics.(EdgeCheck.position, IsBoundry, BoundryPoint);
+        IsEdge = Physics.(EdgeCheck.position, IsBoundry, BoundryPoint);
 
-       // IsBoundry = Physics.(BoundryPoint.position, IsBoundry, BoundryPoint);
+        IsBoundry = Physics.(BoundryPoint.position, IsBoundry, BoundryPoint);
     }
 }

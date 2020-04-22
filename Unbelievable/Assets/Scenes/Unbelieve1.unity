@@ -713,6 +713,21 @@ PrefabInstance:
       propertyPath: points
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6014844871693268211, guid: eb9f386ff7db1854cb5df80ce210d94b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4400138343105601066, guid: eb9f386ff7db1854cb5df80ce210d94b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4400138343105601066, guid: eb9f386ff7db1854cb5df80ce210d94b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb9f386ff7db1854cb5df80ce210d94b, type: 3}
 --- !u!1 &489096866
@@ -2008,21 +2023,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1121748512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121748502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7f0b67e5a86b6f449baef0adff53064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  target: {fileID: 0}
-  moveSpeed: 5
 --- !u!65 &1121748513
 BoxCollider:
   m_ObjectHideFlags: 0

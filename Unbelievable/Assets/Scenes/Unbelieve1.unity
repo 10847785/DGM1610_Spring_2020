@@ -489,7 +489,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391741328}
   m_LocalRotation: {x: -0.07631535, y: -0, z: -0, w: 0.9970838}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -0.6}
   m_LocalScale: {x: 2.0614471, y: 2.0614479, z: 2.0614479}
   m_Children: []
   m_Father: {fileID: 489096870}
@@ -497,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -8.754001, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 238, y: 84.7}
+  m_AnchoredPosition: {x: 238, y: 72.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &391741330
@@ -641,7 +641,7 @@ PrefabInstance:
     - target: {fileID: 6014844871693268212, guid: eb9f386ff7db1854cb5df80ce210d94b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.95000005
+      value: -0.21
       objectReference: {fileID: 0}
     - target: {fileID: 6014844871693268212, guid: eb9f386ff7db1854cb5df80ce210d94b,
         type: 3}
@@ -713,10 +713,20 @@ PrefabInstance:
       propertyPath: points
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7678456361053872424, guid: eb9f386ff7db1854cb5df80ce210d94b,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1429311650}
     - target: {fileID: 6014844871693268211, guid: eb9f386ff7db1854cb5df80ce210d94b,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6014844871693268211, guid: eb9f386ff7db1854cb5df80ce210d94b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4400138343105601066, guid: eb9f386ff7db1854cb5df80ce210d94b,
         type: 3}
@@ -728,7 +738,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: -4400138343105601066, guid: eb9f386ff7db1854cb5df80ce210d94b,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6014844871693268208, guid: eb9f386ff7db1854cb5df80ce210d94b, type: 3}
+    - {fileID: -4400138343105601066, guid: eb9f386ff7db1854cb5df80ce210d94b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eb9f386ff7db1854cb5df80ce210d94b, type: 3}
 --- !u!1 &489096866
 GameObject:
@@ -1233,7 +1250,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633277249}
   m_LocalRotation: {x: -0.07631535, y: -0, z: -0, w: 0.9970838}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -0.6}
   m_LocalScale: {x: 2.0614471, y: 2.0614479, z: 2.0614479}
   m_Children: []
   m_Father: {fileID: 489096870}
@@ -1241,7 +1258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -8.754001, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 225, y: 84.7}
+  m_AnchoredPosition: {x: 225, y: 72.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633277251
@@ -2001,6 +2018,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wanderRadius: 50
   wanderTimer: 3
+  target: {fileID: 69015721}
+  speed: 1.73
+  alertDist: 6
+  attackDist: 1
+  damage: 6
 --- !u!195 &1121748504
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2023,19 +2045,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!65 &1121748513
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121748502}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7, y: 0.55, z: 7}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1243392432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,7 +2336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310473988}
   m_LocalRotation: {x: 0.33528146, y: -0, z: -0, w: 0.942118}
-  m_LocalPosition: {x: 0, y: 10.7, z: -22.2}
+  m_LocalPosition: {x: 0, y: 13.65, z: -28.44}
   m_LocalScale: {x: 0.7917394, y: 0.7917394, z: 0.7917394}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2652,6 +2661,7 @@ GameObject:
   - component: {fileID: 1736141870}
   - component: {fileID: 1736141876}
   - component: {fileID: 1736141877}
+  - component: {fileID: 1736141878}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -2787,6 +2797,25 @@ MonoBehaviour:
   pickUpName: Rocks
   pickUpType: Weapon
   pointsToAdd: 5
+--- !u!95 &1736141878
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736141869}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad8f0425660b5e04aa603d4173c53f17, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1793726062
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,7 +3183,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051639767}
   m_LocalRotation: {x: -0.07631535, y: -0, z: -0, w: 0.9970838}
-  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 4.9}
   m_LocalScale: {x: 2.0614471, y: 2.0614479, z: 2.0614479}
   m_Children: []
   m_Father: {fileID: 489096870}
@@ -3162,7 +3191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -8.754001, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 168, y: 87.79999}
+  m_AnchoredPosition: {x: 168, y: 75.49999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051639769
@@ -3323,7 +3352,7 @@ PrefabInstance:
     - target: {fileID: 7351615914179461636, guid: 773654b2e2514914cba7a80b2e6dab09,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.9741062
+      value: -14.53
       objectReference: {fileID: 0}
     - target: {fileID: 7351615914179461636, guid: 773654b2e2514914cba7a80b2e6dab09,
         type: 3}

@@ -56,7 +56,7 @@ public class Wander : MonoBehaviour
             print("Enemy is Following");
             direction = target.position - transform.position;
             direction.y = 0;
-            speed -= 3;
+            speed -= 100;
             transform.LookAt(target);
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
 

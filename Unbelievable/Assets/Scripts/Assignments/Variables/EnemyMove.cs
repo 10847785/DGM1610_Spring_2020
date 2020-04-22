@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    public GameObject Player;
+  /*  public GameObject Player;
     //public Transform target; // transform.Translate example
     //public int damage;
     private Rigidbody enemyRb; // Velocity and Add Force example
@@ -32,5 +32,5 @@ public class EnemyMove : MonoBehaviour
         enemyRb.AddForce((Player.transform.position - transform.position).normalized * moveSpeed);
         // MovePosition
 
-    }
+    }*/
 }

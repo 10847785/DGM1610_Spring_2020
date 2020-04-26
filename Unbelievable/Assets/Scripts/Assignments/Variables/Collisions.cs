@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Collisions : MonoBehaviour
 {
+   void OnCollisionEnter2D()
+    {
+        Debug.Log("Hit Object");
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3752670365300129068}
   - component: {fileID: -4246533821549257686}
   - component: {fileID: -1710436643439333506}
+  - component: {fileID: 233428834182684476}
+  - component: {fileID: -8432351872396059375}
   m_Layer: 0
   m_Name: Sphere_Enemy
   m_TagString: Enemy
@@ -106,8 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf5033e962f875468af4d545c71b94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  moveSpeed: 10
 --- !u!54 &-4246533821549257686
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -136,7 +136,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37cd6ba9e88c46749b85426cd9c5af94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 3
+  currentHealth: 6
+  maxHealth: 6
   spawnPoint: {fileID: 0}
   points: 10
+--- !u!114 &233428834182684476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051942265829234092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c867d9e7ec009be42b3fc1b00014125d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderRadius: 50
+  wanderTimer: 0
+  target: {fileID: 0}
+  speed: 4
+  alertDist: 10
+  attackDist: 1
+  damage: 10
+--- !u!195 &-8432351872396059375
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051942265829234092}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5373782409285025706}
   - component: {fileID: 6618457504124830023}
   - component: {fileID: 8660730634491996259}
+  - component: {fileID: -8538194599837655008}
   - component: {fileID: 3752670365300129068}
   - component: {fileID: -4246533821549257686}
   - component: {fileID: -1710436643439333506}
@@ -96,6 +97,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &-8538194599837655008
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051942265829234092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3752670365300129068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,8 +152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 6
   maxHealth: 6
-  spawnPoint: {fileID: 0}
-  points: 10
+  spawnPoint: {fileID: 4934470261634341774, guid: b535a054c559d7e45bd762b5eddae664,
+    type: 3}
+  points: 20
 --- !u!114 &233428834182684476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +173,7 @@ MonoBehaviour:
   speed: 4
   alertDist: 10
   attackDist: 1
-  damage: 10
+  damage: 7
 --- !u!195 &-8432351872396059375
 NavMeshAgent:
   m_ObjectHideFlags: 0

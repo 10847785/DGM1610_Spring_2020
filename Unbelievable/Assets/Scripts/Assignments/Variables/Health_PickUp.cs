@@ -9,7 +9,8 @@ public class Health_PickUp : PickUp
 
     public Text HealthText;
 
-    private Text HealthTotalText;
+    public Text HealthTotalText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,11 +18,7 @@ public class Health_PickUp : PickUp
         print("Player health is" + healthAmount);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 
     private void OnTriggerEnter(Collider other)
     {

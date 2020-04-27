@@ -12,6 +12,8 @@ public class Player_Health : MonoBehaviour
     public Text hp;
 
     public Text maxHP;
+
+   
     
 
     // Update is called once per frame

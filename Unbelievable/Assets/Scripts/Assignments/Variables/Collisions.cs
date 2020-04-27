@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Collisions : MonoBehaviour
 {
+    public Collider Player;
+
    void OnCollisionEnter2D()
     {
         Debug.Log("Hit Object");

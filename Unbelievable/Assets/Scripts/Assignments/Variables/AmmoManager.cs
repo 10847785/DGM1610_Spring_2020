@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AmmoManager : MonoBehaviour
 {
     public static int Ammo;
-    Text AmmoText;
-    public int AmmoCount = 10;
+    public int AmmoCount;
+    public Text AmmoText;
+    private Text AmountText;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        AmmoText = GetComponent<Text>();
+        AmountText = GetComponent<Text>();
         Ammo = 0;
+       // AmmoText.GetComponent<Text>().enabled = false;
     }
 
     // Update is called once per frame

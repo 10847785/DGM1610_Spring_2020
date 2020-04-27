@@ -29,6 +29,7 @@ public class Player_Health : MonoBehaviour
         if(currentHealth <= 0)
         {
             currentHealth = 0;
+            Destroy(gameObject);
             print("You are Dead! Dead! Dead!");
         }
     }

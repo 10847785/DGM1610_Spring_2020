@@ -321,7 +321,7 @@ Transform:
   m_Children:
   - {fileID: 1310473991}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -359.718, y: 0.58500004, z: -1.0730001}
 --- !u!54 &69015722
 Rigidbody:
@@ -514,7 +514,7 @@ PrefabInstance:
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
@@ -608,6 +608,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 69015721}
+    - target: {fileID: 1121748503, guid: 60e723556edf4b544bfe998179ec15d6, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3689276962300378990, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
       propertyPath: spawnPoint
@@ -836,7 +840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5629591, b: 0.2028302, a: 1}
+  m_Color: {r: 0, g: 0, b: 0.6156863, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -844,7 +848,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 228b02dd86415cf47953b12d8723a6fb, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -852,7 +856,7 @@ MonoBehaviour:
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -2009,7 +2013,7 @@ PrefabInstance:
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
@@ -2543,7 +2547,7 @@ PrefabInstance:
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
@@ -2616,7 +2620,7 @@ PrefabInstance:
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
@@ -3003,7 +3007,7 @@ PrefabInstance:
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
@@ -4487,7 +4491,7 @@ PrefabInstance:
     - target: {fileID: 4379163920929523351, guid: 845d4c38d5cd0cb46b3df1adf2b17ee2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4379163920929523351, guid: 845d4c38d5cd0cb46b3df1adf2b17ee2,
         type: 3}
@@ -4600,7 +4604,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50.000004, y: -30.000002, z: 65.826004}
 --- !u!1001 &2131478243
 PrefabInstance:
@@ -4652,7 +4656,7 @@ PrefabInstance:
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 775937671613459122, guid: 60e723556edf4b544bfe998179ec15d6,
         type: 3}

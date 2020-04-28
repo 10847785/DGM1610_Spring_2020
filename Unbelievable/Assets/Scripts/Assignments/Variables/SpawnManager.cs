@@ -7,11 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] enemyPrefabs;
     public int enemyIndex;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()

@@ -10,11 +10,7 @@ public class OnTriggers_Practice : MonoBehaviour
     public float alive;
     public float dead;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()

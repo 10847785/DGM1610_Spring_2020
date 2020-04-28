@@ -16,11 +16,7 @@ public class Variables : MonoBehaviour
         Cookies(amount, money, cost);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+   
 
     void Cookies(int amount, float money, float cost)
     {

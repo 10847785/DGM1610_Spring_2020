@@ -21,15 +21,5 @@ public class SO : ScriptableObject // Notice how we change the inheritance from 
 
     //Scriptable Objects can also contain function and conditionals.
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

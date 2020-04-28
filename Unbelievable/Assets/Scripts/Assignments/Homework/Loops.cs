@@ -75,9 +75,5 @@ public class Loops : MonoBehaviour
 
   //Practice end here
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 }

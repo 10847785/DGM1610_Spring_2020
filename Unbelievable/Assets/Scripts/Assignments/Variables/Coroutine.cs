@@ -44,9 +44,5 @@ public class Coroutine : MonoBehaviour
         print("Finished");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

@@ -31,9 +31,5 @@ public class Counter : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
